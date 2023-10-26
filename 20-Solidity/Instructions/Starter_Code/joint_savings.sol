@@ -145,11 +145,23 @@ function deposit() public payable {
     function setAccounts(address payable account1, address payable account2) public{
 
         // Set the values of `accountOne` and `accountTwo` to `account1` and `account2` respectively.
+ /*
+    Define a `public` function named `setAccounts` that receive two `address payable` arguments named `account1` and `account2`.
+    */
+    function setAccounts(address payable account1, address payable account2) public{
 
+        // Set the values of `accountOne` and `accountTwo` to `account1` and `account2` respectively.
+        // YOUR CODE HERE!
+    }
     }
 
     /*
     Finally, add the **default fallback function** so that your contract can store Ether sent from outside the deposit function.
     */
-    // YOUR CODE HERE!
+// Default fallback function
+function () external payable {
+    // This function allows the contract to accept Ether sent from outside
+    // You can choose to log this event or perform other actions if needed
+}
+
 }
